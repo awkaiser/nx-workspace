@@ -77,6 +77,27 @@
           }
         }
       }
+    },
+    "ui-music": {
+      "root": "libs/ui-music",
+      "sourceRoot": "libs/ui-music/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/ui-music/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui-music"],
+          "options": {
+            "jestConfig": "libs/ui-music/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

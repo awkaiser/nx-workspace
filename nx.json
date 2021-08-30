@@ -33,6 +33,9 @@
     "music-e2e": {
       "tags": [],
       "implicitDependencies": ["music"]
+    },
+    "ui-music": {
+      "tags": []
     }
   }
 }

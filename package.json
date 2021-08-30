@@ -1,10 +1,10 @@
 {
   "name": "nx-workspace",
-  "version": "0.0.0",
-  "license": "MIT",
+  "version": "0.1.0",
   "scripts": {
-    "start": "nx serve",
     "build": "nx build",
+    "component:ui-music": "nx g @nrwl/react:component --pascalCaseFiles --pascalCaseDirectory --style=@emotion/styled --project=ui-music --export",
+    "start": "nx serve",
     "test": "nx test"
   },
   "private": true,
